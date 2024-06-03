@@ -3,7 +3,7 @@ const path = require('path');
 const execSync = require('child_process').execSync;
 const num = process.argv[2];
 const Directory = "./JavaScriptAlgorithmsandDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator/"
-const command = `git commit -m "step${num}"`;
+const command = `git commit -m "step${num-1}"`;
 
 try {
   execSync(command, { stdio: 'inherit' });
