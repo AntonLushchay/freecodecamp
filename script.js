@@ -27,5 +27,8 @@ fs.mkdir(Directory + "step" + num, err => {
   console.log(`Папка "${num}" создана.`);
 });
 
+Directory
+
+fs.writeFile(Directory + "step" + num + "script.js")
 
 
