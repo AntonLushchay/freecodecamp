@@ -2,14 +2,12 @@ const fs = require('fs');
 const path = require('path');
 const execSync = require('child_process').execSync;
 const num = process.argv[2];
-
 const Directory = "./JavaScriptAlgorithmsandDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator/"
-
 const command = `git commit -m "step${num}"`;
 
 try {
   execSync(command, { stdio: 'inherit' });
-  console.log(`Комит создан с сообщением: ${commitMessage}`);
+  console.log(`Комит создан с сообщением: step${num-1}`);
 } catch (err) {
   console.error('Ошибка при создании коммита:', err);
 }
@@ -27,8 +25,11 @@ fs.mkdir(Directory + "step" + num, err => {
   console.log(`Папка "${num}" создана.`);
 });
 
-Directory
-
-fs.writeFile(Directory + "step" + num + "script.js")
-
+fs.writeFile(Directory + "step" + num + "/script.js", "", err => {
+	if (err) {
+	  console.error(err);
+	  return;
+	}
+	console.log(`Файл создан.`);
+  });
 
