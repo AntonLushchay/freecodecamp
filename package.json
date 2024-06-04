@@ -1,12 +1,17 @@
 {
-  "name": "freecodecamp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo $num && exit 1",
-  "go": "git add . && node ./script.js"
-  },
-  "author": "",
-  "license": "ISC"
+    "name": "freecodecamp",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo $num && exit 1",
+        "go": "git add . && node ./script.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "del": "^7.1.0",
+        "gulp": "^5.0.0",
+        "gulp-concat": "^2.6.1"
+    }
 }

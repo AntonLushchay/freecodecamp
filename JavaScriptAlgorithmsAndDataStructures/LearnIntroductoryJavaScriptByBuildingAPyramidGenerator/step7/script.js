@@ -1,7 +1,8 @@
+// Step7
 // Use camel case to declare a new secondCharacter variable.
 
 let character = 'Hello';
 console.log(character);
-character = "World";
+character = 'World';
 console.log(character);
 let secondCharacter;

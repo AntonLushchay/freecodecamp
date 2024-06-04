@@ -1,5 +1,6 @@
+// Step28
 // Replace your let keywords with const.
 
-const character = "Hello";
+const character = 'Hello';
 const count = 8;
 const rows = [];

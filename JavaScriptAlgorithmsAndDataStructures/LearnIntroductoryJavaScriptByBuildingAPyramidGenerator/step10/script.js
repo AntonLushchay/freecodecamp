@@ -1,10 +1,10 @@
+// Step10
 // change your secondCharacter assignment from "Test" to your character variable.
-
 
 let character = 'Hello';
 console.log(character);
-character = "World";
+character = 'World';
 let secondCharacter;
-secondCharacter = "Test";
+secondCharacter = 'Test';
 secondCharacter = character;
 console.log(secondCharacter);
