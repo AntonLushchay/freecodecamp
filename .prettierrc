@@ -6,5 +6,9 @@
     "singleQuote": true,
     "endOfLine": "crlf",
     "trailingComma": "es5",
-    "arrowParens": "always"
+    "arrowParens": "always",
+    "ignorePatterns": [
+        "./JavaScriptAlgorithmsAndDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator/dist/"
+    ]
 }
+
