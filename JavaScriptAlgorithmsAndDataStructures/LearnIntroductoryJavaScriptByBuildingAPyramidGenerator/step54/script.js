@@ -1,13 +1,13 @@
-// Step 53
-// use const to declare a test variable in your padRow function. Initialise it with the value "Testing".
+// Step 54
+// Move your test initialization to the line above your return statement.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(name) {
-    return character + name;
     const test = 'Testing';
+    return character + name;
 }
 
 const call = padRow('CamperChan');
