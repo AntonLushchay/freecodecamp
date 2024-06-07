@@ -15,20 +15,20 @@ const paths = {
     },
 };
 
-function countFolders(folderPath) {
-    let folderCount = 0;
+// function countFolders(folderPath) {
+//     let folderCount = 0;
 
-    const files = fs.readdirSync(folderPath);
-    for (const file of files) {
-        const filePath = path.join(folderPath, file);
-        const stats = fs.statSync(filePath);
-        if (stats.isDirectory()) {
-            folderCount++;
-        }
-    }
+//     const files = fs.readdirSync(folderPath);
+//     for (const file of files) {
+//         const filePath = path.join(folderPath, file);
+//         const stats = fs.statSync(filePath);
+//         if (stats.isDirectory()) {
+//             folderCount++;
+//         }
+//     }
 
-    return folderCount;
-}
+//     return folderCount;
+// }
 
 export function concatjs() {
     function countFolders(folderPath) {
