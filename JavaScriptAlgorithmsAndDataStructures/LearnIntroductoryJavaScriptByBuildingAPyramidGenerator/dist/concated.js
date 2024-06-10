@@ -485,3 +485,1026 @@ for (const row of rows) {
 }
 
 console.log(result);
+
+
+
+// Step 43
+// add 1 to the value of i in your .repeat() call. Do not assign it back to i like you did in your loop conditions.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 44
+// Declare a padRow function. Do not create any parameter variables yet. The function body should be empty. Remember that you need to use camel case for your naming convention.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow() {}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 45
+// Call your padRow function.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow() {}
+padRow();
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 46
+// To see the result of calling your padRow function, declare a call variable and assign your existing padRow call to that variable.
+
+const character = '#';
+const count = 8;
+const rows = [];
+function padRow() {}
+const call = padRow();
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 47
+// Now add a log statement to print the value of your call variable.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow() {}
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 48
+// Use the return keyword to have your function return the string "Hello!".
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow() {
+    return 'Hello!';
+}
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 49
+// To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this demo function has a name parameter:
+
+// function demo(name) {
+
+// }
+// name sounds like a useful parameter, so go ahead and add it to your padRow function.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return 'Hello!';
+}
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 50
+// Change your padRow function to return the name parameter directly.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return name;
+}
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 51
+// Pass your own name as the argument for the name parameter in your padRow call. Remember that your name is a string, so you'll need to use quotes.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return name;
+}
+const call = padRow('Brachistochrone');
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 52
+// Update your padRow function to return the value of concatenating your character variable to the beginning of the name parameter.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return character + name;
+}
+const call = padRow('CamperChan');
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 53
+// use const to declare a test variable in your padRow function. Initialise it with the value "Testing".
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    return character + name;
+    const test = 'Testing';
+}
+
+const call = padRow('CamperChan');
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 54
+// Move your test initialization to the line above your return statement.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    const test = 'Testing';
+    return character + name;
+}
+
+const call = padRow('CamperChan');
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 55
+// Returning a value from a function brings that value into the scope where the function was called. To bring your "Testing" value from the padRow function into the global scope, update your return statement to return only the test variable.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(name) {
+    const test = 'Testing';
+    return test;
+}
+
+const call = padRow('CamperChan');
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 56
+// Remove the name parameter from your function declaration, then remove your "CamperChan" string from the padRow call.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow() {
+    const test = 'Testing';
+    return test;
+}
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 57
+// Go ahead and remove the test declaration from your padRow function. Also, remove the return statement, so your function is empty again.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow() {}
+const call = padRow();
+console.log(call);
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 58
+// As expected, your function now returns undefined again. Your call variable is not necessary any more, so remove the call declaration and the console.log for the call variable.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow() {}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 59
+// Give your padRow function a rowNumber and rowCount parameter. Multiple parameters are separated by a comma
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 60
+// Use the return keyword to return the value of the character variable, repeated rowNumber times.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(character.repeat(i + 1));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 61
+// Replace the character.repeat(i + 1) in your .push() call with a function call for your padRow function.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow());
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 62
+// Pass i + 1 and count as the arguments to your padRow call. Like parameters, arguments are separated by a comma.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return character.repeat(rowNumber);
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+    console.log(rows);
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 63
+// Use the addition operator to concatenate a blank space " " to the beginning and end of your repeated character string.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return ' ' + character.repeat(rowNumber) + ' ';
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 64
+// Update your blank space strings to be repeated rowCount - rowNumber times.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(rowNumber) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 65
+// Update the character value to be repeated 2 * rowNumber - 1 times.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+for (let i = 0; i < count; i = i + 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 66
+// Update your iterator statement in the for loop to use addition assignment.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+for (let i = 0; i < count; i += 1) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 67
+// Replace your addition assignment with the increment operator for your loop iteration.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+for (let i = 0; i < count; i++) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 68
+// Update your iterator to start at 1 instead of 0.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+for (let i = 1; i < count; i++) {
+    rows.push(padRow(i + 1, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 69
+// Update the first argument of your padRow call to be i.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+for (let i = 1; i < count; i++) {
+    rows.push(padRow(i, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 70
+// pdate your loop condition to run while i is less than or equal to count.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 71
+// Add a single-line comment above your function to remind yourself to change the code to a different kind of loop.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// to-do: change a type of loop
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 72
+// Use /* and */ to turn your current for loop, including the body, into a multi-line comment.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}
+*/
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 73
+// Create an if statement with the boolean true as the condition. In the body, print the string "Condition is true".
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+if (true) {
+    console.log('Condition is true');
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 74
+// Change the condition of your if statement to the boolean false.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+if (false) {
+    console.log('Condition is true');
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 75
+// Try changing the condition to the string "false".
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+if ('false') {
+    console.log('Condition is true');
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 76
+// Try changing your if condition to an empty string "", which is a falsy value.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+if ('') {
+    console.log('Condition is true');
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 77
+// Below your if statement, add an else if statement that checks if 5 is less than 10. Then inside the body of the else if statement, log the string "5 is less than 10" to the console.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+if ('') {
+    console.log('Condition is true');
+} else if (5 < 10) {
+    console.log('5 is less than 10');
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 78
+// Add an else block to the else if block. Inside the else block, log the string "This is the else block" to the console.
+
+// To see the results in the console, you can manually change the < in the else if statement to >. That will make the condition false and the else block will run.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+if ('') {
+    console.log('Condition is true');
+} else if (5 < 10) {
+    console.log('5 is less than 10');
+} else {
+    console.log('This is the else block');
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+Step 79
