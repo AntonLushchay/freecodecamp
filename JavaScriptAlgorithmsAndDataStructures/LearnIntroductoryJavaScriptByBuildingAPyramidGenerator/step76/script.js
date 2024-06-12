@@ -1,5 +1,5 @@
 // Step 76
-// Try changing your if condition to an empty string "", which is a falsy value.
+// Use /* and */ to turn your current for loop, including the body, into a multi-line comment.
 
 const character = '#';
 const count = 8;
@@ -17,10 +17,6 @@ function padRow(rowNumber, rowCount) {
 /*for (let i = 1; i <= count; i++) {
   rows.push(padRow(i, count));
 }*/
-
-if ('') {
-    console.log('Condition is true');
-}
 
 let result = '';
 

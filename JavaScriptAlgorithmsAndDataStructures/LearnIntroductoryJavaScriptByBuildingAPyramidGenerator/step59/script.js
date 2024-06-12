@@ -1,11 +1,20 @@
 // Step 59
-// Give your padRow function a rowNumber and rowCount parameter. Multiple parameters are separated by a comma
+// Below the return statement, log the string "This works!" to the console.
+// Copy the console log and paste it above the return statement. Now, the string "This works!" should appear in the console
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow(rowNumber, rowCount) {}
+function padRow(name) {
+    const test = 'Testing';
+    console.log('This works!');
+    return test;
+    console.log('This works!');
+}
+
+const call = padRow('CamperChan');
+console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i + 1));

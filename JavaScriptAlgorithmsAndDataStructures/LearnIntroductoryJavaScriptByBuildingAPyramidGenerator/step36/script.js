@@ -1,12 +1,10 @@
 // Step36
-// Use let to declare a result variable, and assign it an empty string. An empty string is represented by quotation marks with nothing between them, such as "".
+//  Inside the body of the loop, print the value of the i iterator and see what happens.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(i);
+    console.log(i);
 }
-
-let result = '';

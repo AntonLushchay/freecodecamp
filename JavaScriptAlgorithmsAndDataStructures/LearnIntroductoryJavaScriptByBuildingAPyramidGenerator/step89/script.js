@@ -1,5 +1,5 @@
 // Step 89
-// Update your loop's condition to check if done is less than or equal to count.
+// To make your pyramid generate again, push the result of calling padRow with done and count as the arguments to your rows array, similar to what you did in your first loop.
 
 const character = '#';
 const count = 8;
@@ -18,11 +18,15 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
+let continueLoop = false;
 let done = 0;
 
-while (done <= count) {
+while (continueLoop) {
     done++;
     rows.push(padRow(done, count));
+    if (done === count) {
+        continueLoop = false;
+    }
 }
 
 let result = '';

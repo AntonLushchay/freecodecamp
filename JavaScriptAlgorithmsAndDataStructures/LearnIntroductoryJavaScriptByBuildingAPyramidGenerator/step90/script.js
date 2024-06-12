@@ -1,5 +1,5 @@
 // Step 90
-// Update your condition to check if rows.length is less than or equal to count.
+// Update your while loop condition to check if done is not equal to count.
 
 const character = '#';
 const count = 8;
@@ -18,11 +18,15 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
+let continueLoop = false;
 let done = 0;
 
-while (rows.length <= count) {
+while (done !== count) {
     done++;
     rows.push(padRow(done, count));
+    if (done !== count) {
+        continueLoop = false;
+    }
 }
 
 let result = '';

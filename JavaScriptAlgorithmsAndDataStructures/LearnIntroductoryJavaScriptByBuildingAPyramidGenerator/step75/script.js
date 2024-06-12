@@ -1,5 +1,5 @@
 // Step 75
-// Try changing the condition to the string "false".
+// Add a single-line comment above your function to remind yourself to change the code to a different kind of loop.
 
 const character = '#';
 const count = 8;
@@ -14,12 +14,8 @@ function padRow(rowNumber, rowCount) {
 }
 
 // TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
-
-if ('false') {
-    console.log('Condition is true');
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
 }
 
 let result = '';

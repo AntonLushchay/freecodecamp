@@ -1,5 +1,5 @@
 // Step 74
-// Change the condition of your if statement to the boolean false.
+// Update your loop condition to run while i is less than or equal to count.
 
 const character = '#';
 const count = 8;
@@ -13,13 +13,8 @@ function padRow(rowNumber, rowCount) {
     );
 }
 
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
-
-if (false) {
-    console.log('Condition is true');
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
 }
 
 let result = '';

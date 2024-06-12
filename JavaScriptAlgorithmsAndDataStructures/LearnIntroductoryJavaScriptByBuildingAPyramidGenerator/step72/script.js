@@ -1,5 +1,5 @@
 // Step 72
-// Use /* and */ to turn your current for loop, including the body, into a multi-line comment.
+// Update your iterator to start at 1 instead of 0.
 
 const character = '#';
 const count = 8;
@@ -13,11 +13,9 @@ function padRow(rowNumber, rowCount) {
     );
 }
 
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
+for (let i = 1; i < count; i++) {
+    rows.push(padRow(i + 1, count));
 }
-*/
 
 let result = '';
 

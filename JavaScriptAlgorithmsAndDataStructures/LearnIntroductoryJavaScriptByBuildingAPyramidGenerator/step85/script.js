@@ -1,5 +1,5 @@
 // Step 85
-// To make your pyramid generate again, push the result of calling padRow with done and count as the arguments to your rows array, similar to what you did in your first loop.
+// start by using the increment operator to increase the value of the done variable inside your loop.
 
 const character = '#';
 const count = 8;
@@ -23,10 +23,6 @@ let done = 0;
 
 while (continueLoop) {
     done++;
-    rows.push(padRow(done, count));
-    if (done === count) {
-        continueLoop = false;
-    }
 }
 
 let result = '';

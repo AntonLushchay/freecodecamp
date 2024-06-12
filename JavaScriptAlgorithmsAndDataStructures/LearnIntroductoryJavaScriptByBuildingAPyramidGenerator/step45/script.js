@@ -1,12 +1,9 @@
 // Step 45
-// Call your padRow function.
+// add 1 to the value of i in your .repeat() call. Do not assign it back to i like you did in your loop conditions.
 
 const character = '#';
 const count = 8;
 const rows = [];
-
-function padRow() {}
-padRow();
 
 for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i + 1));

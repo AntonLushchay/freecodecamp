@@ -1,11 +1,17 @@
 // Step 58
-// As expected, your function now returns undefined again. Your call variable is not necessary any more, so remove the call declaration and the console.log for the call variable.
+// To use your "Testing" value, return it out of the padRow function by updating your return statement to return only the test variable.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow() {}
+function padRow(name) {
+    const test = 'Testing';
+    return test;
+}
+
+const call = padRow('CamperChan');
+console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i + 1));

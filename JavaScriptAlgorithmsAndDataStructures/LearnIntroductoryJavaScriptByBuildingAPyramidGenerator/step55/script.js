@@ -1,5 +1,5 @@
 // Step 55
-// Returning a value from a function brings that value into the scope where the function was called. To bring your "Testing" value from the padRow function into the global scope, update your return statement to return only the test variable.
+// With that quick review complete, you should remove your addTwoNumbers function, sum variable, and log statement.
 
 const character = '#';
 const count = 8;

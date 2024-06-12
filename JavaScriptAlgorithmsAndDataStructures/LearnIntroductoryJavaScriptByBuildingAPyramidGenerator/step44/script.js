@@ -1,14 +1,12 @@
 // Step 44
-// Declare a padRow function. Do not create any parameter variables yet. The function body should be empty. Remember that you need to use camel case for your naming convention.
+// Use the .repeat() method on your character, and give it i for the number.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow() {}
-
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i + 1));
+    rows.push(character.repeat(i));
 }
 
 let result = '';

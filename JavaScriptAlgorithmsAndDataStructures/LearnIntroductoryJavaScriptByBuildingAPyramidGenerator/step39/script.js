@@ -1,5 +1,5 @@
 // Step39
-// In your for...of loop, use the addition operator to concatenate the row value to the result value.
+// Add a log statement to print the value of result.
 
 const character = '#';
 const count = 8;
@@ -11,7 +11,4 @@ for (let i = 0; i < count; i = i + 1) {
 
 let result = '';
 
-for (const row of rows) {
-    result = result + row;
-}
 console.log(result);

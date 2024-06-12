@@ -1,5 +1,5 @@
 // Step 86
-// Update your while loop condition to check if done is not equal to count.
+// Add an if statement to your loop. The statement should check if done is equal to count using the equality operator.
 
 const character = '#';
 const count = 8;
@@ -21,11 +21,9 @@ function padRow(rowNumber, rowCount) {
 let continueLoop = false;
 let done = 0;
 
-while (done !== count) {
+while (continueLoop) {
     done++;
-    rows.push(padRow(done, count));
-    if (done === count) {
-        continueLoop = false;
+    if (done == count) {
     }
 }
 

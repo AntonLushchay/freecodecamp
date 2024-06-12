@@ -1,10 +1,8 @@
 // Step35
-// Replace your log statement with a statement to push i to your rows array.
+// Use that syntax to replace your "iteration" string with a reassignment statement that increases i by one.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-for (let i = 0; i < count; i = i + 1) {
-    rows.push(i);
-}
+for (let i = 0; i < count; i = i + 1) {}

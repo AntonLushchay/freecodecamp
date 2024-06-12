@@ -1,5 +1,5 @@
 // Step 73
-// Create an if statement with the boolean true as the condition. In the body, print the string "Condition is true".
+// Update the first argument of your padRow call to be i.
 
 const character = '#';
 const count = 8;
@@ -13,13 +13,8 @@ function padRow(rowNumber, rowCount) {
     );
 }
 
-// TODO: use a different type of loop
-/*for (let i = 1; i <= count; i++) {
-  rows.push(padRow(i, count));
-}*/
-
-if (true) {
-    console.log('Condition is true');
+for (let i = 1; i < count; i++) {
+    rows.push(padRow(i, count));
 }
 
 let result = '';

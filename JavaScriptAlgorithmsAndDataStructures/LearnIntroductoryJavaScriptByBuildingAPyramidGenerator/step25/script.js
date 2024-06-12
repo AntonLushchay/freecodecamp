@@ -1,5 +1,5 @@
 // Step25
-// what does .push() return? Assign your existing rows.push() to a new pushed variable, and log it.
+// Use .push() to add the string "freeCodeCamp" to the end of your rows array. Add this code before your console.log so you can see the change you made to your array.
 
 let character = 'Hello';
 let count = 8;

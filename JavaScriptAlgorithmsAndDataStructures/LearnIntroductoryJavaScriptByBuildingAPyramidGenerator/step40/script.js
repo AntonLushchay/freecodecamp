@@ -1,5 +1,5 @@
 // Step40
-// Use a second addition operator to concatenate a new line between the existing result value and the added row value.
+// Create a for...of loop to iterate through your rows array, assigning each value to a row variable.
 
 const character = '#';
 const count = 8;
@@ -12,6 +12,6 @@ for (let i = 0; i < count; i = i + 1) {
 let result = '';
 
 for (const row of rows) {
-    result = result + '\n' + row;
 }
+
 console.log(result);

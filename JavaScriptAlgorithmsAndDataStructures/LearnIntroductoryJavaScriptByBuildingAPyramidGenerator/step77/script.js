@@ -1,5 +1,5 @@
 // Step 77
-// Below your if statement, add an else if statement that checks if 5 is less than 10. Then inside the body of the else if statement, log the string "5 is less than 10" to the console.
+// Create an if statement with the boolean true as the condition. In the body, print the string "Condition is true".
 
 const character = '#';
 const count = 8;
@@ -18,10 +18,8 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
-if ('') {
+if (true) {
     console.log('Condition is true');
-} else if (5 < 10) {
-    console.log('5 is less than 10');
 }
 
 let result = '';

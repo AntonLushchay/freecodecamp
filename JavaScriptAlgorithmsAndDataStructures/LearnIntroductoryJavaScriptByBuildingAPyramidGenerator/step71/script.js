@@ -1,5 +1,5 @@
 // Step 71
-// Add a single-line comment above your function to remind yourself to change the code to a different kind of loop.
+// Replace your addition assignment with the increment operator for your loop iteration.
 
 const character = '#';
 const count = 8;
@@ -13,9 +13,8 @@ function padRow(rowNumber, rowCount) {
     );
 }
 
-// to-do: change a type of loop
-for (let i = 1; i <= count; i++) {
-    rows.push(padRow(i, count));
+for (let i = 0; i < count; i++) {
+    rows.push(padRow(i + 1, count));
 }
 
 let result = '';

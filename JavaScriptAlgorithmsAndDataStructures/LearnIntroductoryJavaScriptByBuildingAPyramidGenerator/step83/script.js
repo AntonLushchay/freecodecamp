@@ -1,5 +1,5 @@
 // Step 83
-// Update your done == count condition to use the strict equality operator.
+// Once you complete that, use let to declare a continueLoop variable and assign it the boolean false. Then use let to declare a done variable and assign it the value 0.
 
 const character = '#';
 const count = 8;
@@ -20,12 +20,6 @@ function padRow(rowNumber, rowCount) {
 
 let continueLoop = false;
 let done = 0;
-
-while (continueLoop) {
-    done++;
-    if (done === count) {
-    }
-}
 
 let result = '';
 

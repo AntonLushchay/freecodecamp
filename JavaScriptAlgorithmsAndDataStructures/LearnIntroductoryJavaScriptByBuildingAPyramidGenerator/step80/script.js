@@ -1,5 +1,5 @@
 // Step 80
-// Declare a while loop with continueLoop as the condition. The body should be empty.
+// Try changing your if condition to an empty string "", which is a falsy value.
 
 const character = '#';
 const count = 8;
@@ -18,9 +18,9 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
-let continueLoop = false;
-let done = 0;
-while (continueLoop) {}
+if ('') {
+    console.log('Condition is true');
+}
 
 let result = '';
 

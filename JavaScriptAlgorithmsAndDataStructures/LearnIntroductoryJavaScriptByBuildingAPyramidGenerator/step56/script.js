@@ -1,15 +1,14 @@
 // Step 56
-// Remove the name parameter from your function declaration, then remove your "CamperChan" string from the padRow call.
+//  Update your padRow function to return the value of concatenating your character variable to the beginning of the name parameter.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow() {
-    const test = 'Testing';
-    return test;
+function padRow(name) {
+    return character + name;
 }
-const call = padRow();
+const call = padRow('CamperChan');
 console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {

@@ -1,16 +1,14 @@
 // Step 63
-// Use the addition operator to concatenate a blank space " " to the beginning and end of your repeated character string.
+// Give your padRow function a rowNumber and rowCount parameter
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow(rowNumber, rowCount) {
-    return ' ' + character.repeat(rowNumber) + ' ';
-}
+function padRow(rowNumber, rowCount) {}
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(padRow(i + 1, count));
+    rows.push(character.repeat(i + 1));
 }
 
 let result = '';

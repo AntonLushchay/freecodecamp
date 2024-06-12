@@ -1,16 +1,16 @@
 // Step 61
-// Replace the character.repeat(i + 1) in your .push() call with a function call for your padRow function.
+// Go ahead and remove the test declaration from your padRow function. Also, remove the return statement, so your function is empty again.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow(rowNumber, rowCount) {
-    return character.repeat(rowNumber);
-}
+function padRow() {}
+const call = padRow();
+console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(padRow());
+    rows.push(character.repeat(i + 1));
 }
 
 let result = '';

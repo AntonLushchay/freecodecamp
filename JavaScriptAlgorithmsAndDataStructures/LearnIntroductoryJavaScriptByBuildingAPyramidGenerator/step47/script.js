@@ -1,13 +1,12 @@
 // Step 47
-// Now add a log statement to print the value of your call variable.
+// Call your padRow function.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow() {}
-const call = padRow();
-console.log(call);
+padRow();
 
 for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i + 1));

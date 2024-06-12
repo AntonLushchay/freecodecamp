@@ -1,15 +1,12 @@
 // Step 48
-// Use the return keyword to have your function return the string "Hello!".
+// To see the result of calling your padRow function, declare a call variable and assign your existing padRow call to that variable.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow() {
-    return 'Hello!';
-}
+function padRow() {}
 const call = padRow();
-console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i + 1));

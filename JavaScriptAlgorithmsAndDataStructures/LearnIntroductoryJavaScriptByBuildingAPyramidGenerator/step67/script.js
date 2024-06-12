@@ -1,19 +1,15 @@
 // Step 67
-// Replace your addition assignment with the increment operator for your loop iteration.
+// Use the addition operator to concatenate a single space " " to the beginning and end of your repeated character string.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(rowNumber, rowCount) {
-    return (
-        ' '.repeat(rowCount - rowNumber) +
-        character.repeat(2 * rowNumber - 1) +
-        ' '.repeat(rowCount - rowNumber)
-    );
+    return ' ' + character.repeat(rowNumber) + ' ';
 }
 
-for (let i = 0; i < count; i++) {
+for (let i = 0; i < count; i = i + 1) {
     rows.push(padRow(i + 1, count));
 }
 

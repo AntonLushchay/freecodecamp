@@ -1,5 +1,5 @@
 // Step 68
-// Update your iterator to start at 1 instead of 0.
+// Update your blank space strings to be repeated rowCount - rowNumber times.
 
 const character = '#';
 const count = 8;
@@ -8,12 +8,12 @@ const rows = [];
 function padRow(rowNumber, rowCount) {
     return (
         ' '.repeat(rowCount - rowNumber) +
-        character.repeat(2 * rowNumber - 1) +
+        character.repeat(rowNumber) +
         ' '.repeat(rowCount - rowNumber)
     );
 }
 
-for (let i = 1; i < count; i++) {
+for (let i = 0; i < count; i = i + 1) {
     rows.push(padRow(i + 1, count));
 }
 

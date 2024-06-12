@@ -1,20 +1,16 @@
 // Step 65
-// Update the character value to be repeated 2 * rowNumber - 1 times.
+// Replace the character.repeat(i + 1) in your .push() call with a function call for your padRow function.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(rowNumber, rowCount) {
-    return (
-        ' '.repeat(rowCount - rowNumber) +
-        character.repeat(2 * rowNumber - 1) +
-        ' '.repeat(rowCount - rowNumber)
-    );
+    return character.repeat(rowNumber);
 }
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(padRow(i + 1, count));
+    rows.push(padRow());
 }
 
 let result = '';

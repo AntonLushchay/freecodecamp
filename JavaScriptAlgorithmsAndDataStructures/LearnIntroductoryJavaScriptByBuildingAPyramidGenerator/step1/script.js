@@ -1,4 +1,4 @@
 // Step1
-// Declare a character variable in your code.
+// Use the let keyword to declare a variable called character.
 
 let character;

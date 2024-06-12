@@ -1,12 +1,12 @@
 // Step 50
-// Change your padRow function to return the name parameter directly.
+// Use the return keyword to have your function return the string "Hello!".
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow(name) {
-    return name;
+function padRow() {
+    return 'Hello!';
 }
 const call = padRow();
 console.log(call);

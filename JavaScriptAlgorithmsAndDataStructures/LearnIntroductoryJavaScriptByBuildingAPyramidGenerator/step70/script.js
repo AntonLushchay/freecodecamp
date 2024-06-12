@@ -1,5 +1,5 @@
 // Step 70
-// pdate your loop condition to run while i is less than or equal to count.
+// Update your iterator statement in the for loop to use addition assignment.
 
 const character = '#';
 const count = 8;
@@ -13,8 +13,8 @@ function padRow(rowNumber, rowCount) {
     );
 }
 
-for (let i = 1; i <= count; i++) {
-    rows.push(padRow(i, count));
+for (let i = 0; i < count; i += 1) {
+    rows.push(padRow(i + 1, count));
 }
 
 let result = '';

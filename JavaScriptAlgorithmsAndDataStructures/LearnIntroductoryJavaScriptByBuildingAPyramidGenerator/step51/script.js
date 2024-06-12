@@ -1,14 +1,14 @@
 // Step 51
-// Pass your own name as the argument for the name parameter in your padRow call. Remember that your name is a string, so you'll need to use quotes.
+// name sounds like a useful parameter, so go ahead and add it to your padRow function.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(name) {
-    return name;
+    return 'Hello!';
 }
-const call = padRow('Brachistochrone');
+const call = padRow();
 console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {

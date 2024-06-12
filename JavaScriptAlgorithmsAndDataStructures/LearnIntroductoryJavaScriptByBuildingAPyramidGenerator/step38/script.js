@@ -1,5 +1,5 @@
 // Step38
-// Create a for...of loop to iterate through your rows array, assigning each value to a row variable
+// Use let to declare a result variable, and assign it an empty string. An empty string is represented by quotation marks with nothing between them, such as "".
 
 const character = '#';
 const count = 8;
@@ -10,7 +10,3 @@ for (let i = 0; i < count; i = i + 1) {
 }
 
 let result = '';
-
-for (const row of rows) {
-}
-console.log(result);

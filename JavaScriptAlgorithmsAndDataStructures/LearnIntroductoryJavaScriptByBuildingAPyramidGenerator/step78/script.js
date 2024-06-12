@@ -1,7 +1,5 @@
 // Step 78
-// Add an else block to the else if block. Inside the else block, log the string "This is the else block" to the console.
-
-// To see the results in the console, you can manually change the < in the else if statement to >. That will make the condition false and the else block will run.
+// Change the condition of your if statement to the boolean false.
 
 const character = '#';
 const count = 8;
@@ -20,12 +18,8 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
-if ('') {
+if (false) {
     console.log('Condition is true');
-} else if (5 < 10) {
-    console.log('5 is less than 10');
-} else {
-    console.log('This is the else block');
 }
 
 let result = '';

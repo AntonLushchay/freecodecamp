@@ -1,5 +1,5 @@
 // Step 82
-// Add an if statement to your loop. The statement should check if done is equal to count using the equality operator.
+// Add an else block to the else if block. Inside the else block, log the string "This is the else block" to the console.
 
 const character = '#';
 const count = 8;
@@ -18,13 +18,12 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
-let continueLoop = false;
-let done = 0;
-
-while (continueLoop) {
-    done++;
-    if (done == count) {
-    }
+if ('') {
+    console.log('Condition is true');
+} else if (5 < 10) {
+    console.log('5 is less than 10');
+} else {
+    console.log('This is the else block');
 }
 
 let result = '';

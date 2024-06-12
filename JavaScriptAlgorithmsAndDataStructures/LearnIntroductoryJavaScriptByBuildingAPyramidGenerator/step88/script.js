@@ -1,5 +1,5 @@
 // Step 88
-// Remove your continueLoop variable.
+// Inside your if body, assign the boolean false to your continueLoop variable.
 
 const character = '#';
 const count = 8;
@@ -18,11 +18,14 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
+let continueLoop = false;
 let done = 0;
 
-while (done !== count) {
+while (continueLoop) {
     done++;
-    rows.push(padRow(done, count));
+    if (done === count) {
+        continueLoop = false;
+    }
 }
 
 let result = '';

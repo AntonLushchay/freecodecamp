@@ -1,18 +1,11 @@
 // Step 49
-// To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this demo function has a name parameter:
-
-// function demo(name) {
-
-// }
-// name sounds like a useful parameter, so go ahead and add it to your padRow function.
+// Now add a log statement to print the value of your call variable.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow(name) {
-    return 'Hello!';
-}
+function padRow() {}
 const call = padRow();
 console.log(call);
 

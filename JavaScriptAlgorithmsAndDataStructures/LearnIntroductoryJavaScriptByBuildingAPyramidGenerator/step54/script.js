@@ -1,14 +1,20 @@
 // Step 54
-// Move your test initialization to the line above your return statement.
+// Declare a function named addTwoNumbers. This function should take two arguments and return the sum of those two arguments.
+
+// Then declare a sum variable and assign it the value of calling your addTwoNumbers function with 5 and 10 as the arguments. Log the sum variable to the console.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(name) {
-    const test = 'Testing';
-    return character + name;
+    return name;
 }
+function addTwoNumbers(num1, num2) {
+    return num1 + num2;
+}
+let sum = addTwoNumbers(5, 10);
+console.log(sum);
 
 const call = padRow('CamperChan');
 console.log(call);

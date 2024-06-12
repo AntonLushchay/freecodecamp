@@ -1,7 +1,5 @@
 // Step 79
-// Now that you have practiced working with if...else if...else statements, you can remove them from your code.
-
-// Once you complete that, use let to declare a continueLoop variable and assign it the boolean false. Then use let to declare a done variable and assign it the value 0.
+// Try changing the condition to the string "false".
 
 const character = '#';
 const count = 8;
@@ -20,8 +18,9 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(i, count));
 }*/
 
-let continueLoop = false;
-let done = 0;
+if ('false') {
+    console.log('Condition is true');
+}
 
 let result = '';
 

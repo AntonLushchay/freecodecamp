@@ -1,10 +1,8 @@
 // Step34
-// Inside the body of the loop, print the value of the i iterator and see what happens.
+// Replace your "condition" string with a condition to check if i is less than count.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-for (let i = 0; i < count; i = i + 1) {
-    console.log(i);
-}
+for (let i = 0; i < count; 'iteration') {}

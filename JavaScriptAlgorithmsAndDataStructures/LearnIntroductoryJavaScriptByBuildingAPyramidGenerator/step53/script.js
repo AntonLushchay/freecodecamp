@@ -1,16 +1,14 @@
 // Step 53
-// use const to declare a test variable in your padRow function. Initialise it with the value "Testing".
+// Pass your own name as the argument for the name parameter in your padRow call. Remember that your name is a string, so you'll need to use quotes.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(name) {
-    return character + name;
-    const test = 'Testing';
+    return name;
 }
-
-const call = padRow('CamperChan');
+const call = padRow('Anton');
 console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {

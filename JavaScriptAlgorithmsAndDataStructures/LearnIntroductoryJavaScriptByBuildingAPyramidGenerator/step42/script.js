@@ -1,12 +1,12 @@
 // Step42
-// Use the .repeat() method on your character, and give it i for the number.
+// Use a second addition operator to concatenate a new line between the existing result value and the added row value.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(character.repeat(i));
+    rows.push(i);
 }
 
 let result = '';

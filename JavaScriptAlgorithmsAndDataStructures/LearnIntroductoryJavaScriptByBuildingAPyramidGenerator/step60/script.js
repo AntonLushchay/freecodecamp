@@ -1,13 +1,17 @@
 // Step 60
-// Use the return keyword to return the value of the character variable, repeated rowNumber times.
+// Remove the name parameter from your function declaration, then remove your "CamperChan" string from the padRow call.
+// Also, remove both console.log from the padRow function.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
-function padRow(rowNumber, rowCount) {
-    return character.repeat(rowNumber);
+function padRow() {
+    const test = 'Testing';
+    return test;
 }
+const call = padRow();
+console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {
     rows.push(character.repeat(i + 1));

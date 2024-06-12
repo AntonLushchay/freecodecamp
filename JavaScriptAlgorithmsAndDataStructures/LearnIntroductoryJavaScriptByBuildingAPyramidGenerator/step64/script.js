@@ -1,20 +1,16 @@
 // Step 64
-// Update your blank space strings to be repeated rowCount - rowNumber times.
+// Use the return keyword to return the value of the character variable, repeated rowNumber times.
 
 const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(rowNumber, rowCount) {
-    return (
-        ' '.repeat(rowCount - rowNumber) +
-        character.repeat(rowNumber) +
-        ' '.repeat(rowCount - rowNumber)
-    );
+    return character.repeat(rowNumber);
 }
 
 for (let i = 0; i < count; i = i + 1) {
-    rows.push(padRow(i + 1, count));
+    rows.push(character.repeat(i + 1));
 }
 
 let result = '';

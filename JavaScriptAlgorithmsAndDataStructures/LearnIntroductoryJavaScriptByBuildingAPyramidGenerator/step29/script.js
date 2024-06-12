@@ -1,6 +1,7 @@
 // Step29
-// Change the value of character to be the hash character "#".
+// Change your rows declaration to be assigned an empty array again.
+// Also, change your 'Hello' string to use double quotes again.
 
-const character = '#';
-const count = 8;
-const rows = [];
+let character = 'Hello';
+let count = 8;
+let rows = [];
