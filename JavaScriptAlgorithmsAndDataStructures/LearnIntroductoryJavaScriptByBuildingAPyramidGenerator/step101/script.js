@@ -1,5 +1,5 @@
-// Step 98
-// creating a new for loop. Declare your iterator i and assign it the value of count, then use the boolean false for your condition and iteration statements.
+// Step 101
+// Again, push the result of calling padRow with your i and count variables to your rows array.
 
 const character = '#';
 const count = 8;
@@ -22,7 +22,9 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(rows.length + 1, count));
 }*/
 
-for (let i = count; false; false) {}
+for (let i = count; i > 0; i = i - 1) {
+    rows.push(padRow(i, count));
+}
 
 let result = '';
 
