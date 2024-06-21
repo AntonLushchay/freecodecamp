@@ -2161,12 +2161,16 @@ console.log(result);
 // Step 98
 // creating a new for loop. Declare your iterator i and assign it the value of count, then use the boolean false for your condition and iteration statements.
 
-const character = "#";
+const character = '#';
 const count = 8;
 const rows = [];
 
 function padRow(rowNumber, rowCount) {
-  return " ".repeat(rowCount - rowNumber) + character.repeat(2 * rowNumber - 1) + " ".repeat(rowCount - rowNumber);
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
 }
 
 // TODO: use a different type of loop
@@ -2178,15 +2182,16 @@ function padRow(rowNumber, rowCount) {
   rows.push(padRow(rows.length + 1, count));
 }*/
 
-for (let i = count; false; false)
+for (let i = count; false; false) {}
 
-let result = ""
+let result = '';
 
 for (const row of rows) {
-  result = result + "\n" + row;
+    result = result + '\n' + row;
 }
 
 console.log(result);
+
 
 
 // Step 99
@@ -2261,3 +2266,434 @@ console.log(result);
 
 
 
+// Step 101
+// Again, push the result of calling padRow with your i and count variables to your rows array.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+for (let i = count; i > 0; i = i - 1) {
+    rows.push(padRow(i, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 102
+// Replace your iterator statement with the correct statement using the subtraction assignment operator.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+for (let i = count; i > 0; i -= 1) {
+    rows.push(padRow(i, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 103
+// Replace your subtraction assignment with the decrement operator.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+for (let i = count; i > 0; i--) {
+    rows.push(padRow(i, count));
+}
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 104
+// Use a multi-line comment to comment out this loop as well, to prepare for the next approach.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 105
+// Start by using const to declare a numbers variable. Assign it an array with the elements 1, 2, and 3. Then log the numbers array.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+const numbers = [1, 2, 3];
+console.log(numbers);
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 106
+// Use const to declare an unshifted variable, and assign it the result of calling .unshift() on your numbers array. Pass 5 as the argument. Then print your unshifted variable.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+const numbers = [1, 2, 3];
+const unshifted = numbers.unshift(5);
+console.log(unshifted);
+console.log(numbers);
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 107
+// Declare a shifted variable, assign it the result of calling .shift() on your numbers array, and print the variable.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+const numbers = [1, 2, 3];
+const shifted = numbers.shift();
+console.log(shifted);
+const unshifted = numbers.unshift(5);
+console.log(unshifted);
+console.log(numbers);
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 108
+// Remove your numbers array, and the method calls and log calls.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+}*/
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 109
+// Uncomment only your first for loop. Leave the single line comment and the other two multi line comments in place.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+for (let i = 1; i <= count; i++) {
+    rows.push(padRow(i, count));
+}
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 110
+// Update your loop body to add new rows to the beginning of the array.
+
+const character = '#';
+const count = 8;
+const rows = [];
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+for (let i = 1; i <= count; i++) {
+    rows.unshift(padRow(i, count));
+}
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
+
+
+
+// Step 111
+// Start by declaring an inverted variable, and assigning it the value true. You are not changing this variable in your code, but you will need to use let so our tests can modify it later.
+
+const character = '#';
+const count = 8;
+const rows = [];
+let inverted = true;
+
+function padRow(rowNumber, rowCount) {
+    return (
+        ' '.repeat(rowCount - rowNumber) +
+        character.repeat(2 * rowNumber - 1) +
+        ' '.repeat(rowCount - rowNumber)
+    );
+}
+
+// TODO: use a different type of loop
+for (let i = 1; i <= count; i++) {
+    rows.unshift(padRow(i, count));
+}
+
+/*while (rows.length < count) {
+  rows.push(padRow(rows.length + 1, count));
+}*/
+
+/*for (let i = count; i > 0; i--) {
+  rows.push(padRow(i, count));
+}*/
+
+let result = '';
+
+for (const row of rows) {
+    result = result + '\n' + row;
+}
+
+console.log(result);
