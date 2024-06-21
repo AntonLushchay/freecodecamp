@@ -1,10 +1,10 @@
-// Step 116
-// Remove all comments, both single- and multi-line, from your code.
+// Step 117
+// set character to "!", count to 10, and inverted to false to continue.
 
-const character = '#';
-const count = 8;
+const character = '!';
+const count = 10;
 const rows = [];
-let inverted = true;
+let inverted = false;
 
 function padRow(rowNumber, rowCount) {
     return (
