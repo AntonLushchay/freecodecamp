@@ -37,16 +37,18 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 function update(location) {
-    text.innerText = 'You are in the town square. You see a sign that says "Store".';
     button1.innerText = 'Go to store';
     button2.innerText = 'Go to cave';
     button3.innerText = 'Fight dragon';
     button1.onclick = goStore;
     button2.onclick = goCave;
     button3.onclick = fightDragon;
+    text.innerText = 'You are in the town square. You see a sign that says "Store".';
 }
 
-function goTown() {}
+function goTown() {
+    update();
+}
 
 function goStore() {}
 
