@@ -109,4 +109,7 @@ function fightSlime() {}
 
 function fightBeast() {}
 
-function sellWeapon() {}
+function sellWeapon() {
+    if (inventory.length > 1) {
+    }
+}
