@@ -251,3 +251,9 @@ function easterEgg() {
 }
 
 function pick(guess) {}
+function pickTwo(guess) {
+    pick(2);
+}
+function pickEight(guess) {
+    pick(8);
+}
