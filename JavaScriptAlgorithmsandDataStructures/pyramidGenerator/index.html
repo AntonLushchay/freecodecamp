@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Steps</h1>
+        <p>117 steps of the first chapter of the course</p>
+    </body>
+    <pre><code id="code-container"></code></pre>
+    <script>
+        fetch('./dist/concated.js')
+            .then((response) => response.text())
+            .then((code) => {
+                document.getElementById('code-container').textContent = code;
+            });
+    </script>
+</html>

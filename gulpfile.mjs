@@ -7,11 +7,11 @@ import path from 'path';
 
 const paths = {
     lern1: {
-        src: 'JavaScriptAlgorithmsAndDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator/**/*.js',
-        dest: 'JavaScriptAlgorithmsAndDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator/dist',
+        src: 'JavaScriptAlgorithmsAndDataStructures/pyramidGenerator/**/*.js',
+        dest: 'JavaScriptAlgorithmsAndDataStructures/pyramidGenerator/dist',
     },
     lern2: {
-        src: 'JavaScriptAlgorithmsAndDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator',
+        src: 'JavaScriptAlgorithmsAndDataStructures/pyramidGenerator',
     },
 };
 
@@ -38,8 +38,7 @@ export function concatjs() {
     const sortedFolders = [...Array(folderCount)].map((_, i) => `Step${i + 1}`);
     return src(
         sortedFolders.map(
-            (folder) =>
-                `JavaScriptAlgorithmsAndDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator/${folder}/script.js`
+            (folder) => `JavaScriptAlgorithmsAndDataStructures/pyramidGenerator/${folder}/script.js`
         )
     )
         .pipe(order(['name', 'desc']))
@@ -52,4 +51,3 @@ export const clean = () => deleteAsync(paths.lern1.dest);
 const build = series(clean, concatjs);
 
 export default build;
-

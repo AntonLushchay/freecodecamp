@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Steps</h1>
+        <p>4 steps of the second chapter of the course</p>
+    </body>
+    <pre><code id="code-container"></code></pre>
+    <script>
+        // Определяем список файлов для загрузки
+        const files = [
+            './step 1/script.js',
+            './step 2/script.js',
+            './step 3/script.js',
+            './step 4/script.js',
+        ];
+
+        // Функция для загрузки одного файла
+        function loadFile(path) {
+            return fetch(path).then((response) => {
+                if (!response.ok) {
+                    throw new Error(`Ошибка загрузки ${path}: ${response.status}`);
+                }
+                return response.text();
+            });
+        }
+
+        // Загружаем все файлы и объединяем их содержимое
+        Promise.all(files.map(loadFile))
+            .then((contents) => {
+                const allCode = contents.join('\n\n// ===== NEXT FILE =====\n\n');
+                document.getElementById('code-container').textContent = allCode;
+            })
+            .catch((error) => {
+                console.error('Ошибка при загрузке файлов:', error);
+                document.getElementById(
+                    'code-container'
+                ).textContent = `Ошибка загрузки: ${error.message}`;
+            });
+    </script>
+</html>

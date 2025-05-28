@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
+        "build": "gulp",
         "test": "echo $num && exit 1",
         "go": "git add . && node ./script.js",
         "deploy": "gh-pages -d JS_AlgorithmsAndDataStructures/buildingARolePlayingGame"
