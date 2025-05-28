@@ -2,8 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const execSync = require('child_process').execSync;
 const num = process.argv[2];
-const Directory =
-    './JavaScriptAlgorithmsandDataStructures/LearnIntroductoryJavaScriptByBuildingAPyramidGenerator/';
+const Directory = './JavaScriptAlgorithmsandDataStructures/pyramidGenerator/';
 const command = `git commit -m "step${num - 1}"`;
 
 try {
