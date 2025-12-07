@@ -4,7 +4,7 @@
 ![Type](https://img.shields.io/badge/type-Educational-orange)
 ![Audience](https://img.shields.io/badge/audience-Portfolio-purple)
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor)
 ![HTML](https://img.shields.io/badge/HTML-5-red?logo=html5)
 ![CSS](https://img.shields.io/badge/CSS-3-blue?logo=css3)
 
